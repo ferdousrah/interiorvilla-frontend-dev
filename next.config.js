@@ -1,7 +1,7 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
   images: {
-    domains: ['commondatastorage.googleapis.com', "cms.interiorvillabd.com", "placehold.co"],
+    domains: ['commondatastorage.googleapis.com', "cms.interiorvillabd.com", "placehold.co", "bolt.new"],
     unoptimized: true,
   },
   webpack: (config) => {
