@@ -54,7 +54,7 @@ export const TeamSection = (): JSX.Element => {
         setLoading(true);
         setError(null);
         
-        const response = await fetch('/api/team-members');
+        const response = await fetch('https://cms.interiorvillabd.com/api/team-members?depth=1');
         
         if (!response.ok) {
           throw new Error(`HTTP error! status: ${response.status}`);
@@ -82,7 +82,7 @@ export const TeamSection = (): JSX.Element => {
             designation: "Founder & CEO",
             licenseNumber: null,
             photo: 15,
-            photoUrl: "/team/ashikur-rahman.jpeg",
+            photoUrl: "https://cms.interiorvillabd.com/api/media/file/ashikur-rahman.jpeg?v=1755157308373",
             updatedAt: "2025-08-14T07:41:55.124Z",
             createdAt: "2025-08-14T07:41:55.124Z"
           },
@@ -92,7 +92,7 @@ export const TeamSection = (): JSX.Element => {
             designation: "Head of Business",
             licenseNumber: null,
             photo: 16,
-            photoUrl: "/team/nashiba.jpeg",
+            photoUrl: "https://cms.interiorvillabd.com/api/media/file/nashiba.jpeg?v=1755157615735",
             updatedAt: "2025-08-14T07:46:59.862Z",
             createdAt: "2025-08-14T07:46:59.861Z"
           }
@@ -406,7 +406,7 @@ export const TeamSection = (): JSX.Element => {
                         onError={(e) => {
                           // Fallback to placeholder if image fails to load
                           const target = e.target as HTMLImageElement;
-                          target.src = "/team/placeholder.jpg";
+                          target.src = "https://via.placeholder.com/300x300/75BF44/ffffff?text=Team+Member";
                         }}
                       />
                     </div>
