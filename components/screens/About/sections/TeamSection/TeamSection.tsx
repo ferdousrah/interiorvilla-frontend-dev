@@ -55,6 +55,7 @@ export const TeamSection = (): JSX.Element => {
         setError(null);
         
         const response = await fetch('https://cms.interiorvillabd.com/api/team-members');
+        const response = await fetch('/api/team-members');
         
         if (!response.ok) {
           throw new Error(`HTTP error! status: ${response.status}`);
