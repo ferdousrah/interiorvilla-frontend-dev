@@ -54,7 +54,8 @@ export const TeamSection = (): JSX.Element => {
         setLoading(true);
         setError(null);
         
-        const response = await fetch('/api/team-members');
+        const response = await fetch('https://cms.interiorvillabd.com/api/team-members?depth=1');
+        //const response = await fetch('/api/team-members');
         
         if (!response.ok) {
           throw new Error(`HTTP error! status: ${response.status}`);
@@ -359,14 +360,7 @@ export const TeamSection = (): JSX.Element => {
           </motion.p>
         </div>
 
-        {/* Show team count */}
-        {teamMembers.length > 0 && (
-          <div className="text-center mb-6">
-            <p className="text-sm [font-family:'Fahkwang',Helvetica] text-[#626161]">
-              {teamMembers.length} Team Member{teamMembers.length !== 1 ? 's' : ''}
-            </p>
-          </div>
-        )}
+        
 
         {/* Carousel container */}
         <div
@@ -406,7 +400,7 @@ export const TeamSection = (): JSX.Element => {
                         onError={(e) => {
                           // Fallback to placeholder if image fails to load
                           const target = e.target as HTMLImageElement;
-                          target.src = "https://via.placeholder.com/300x300/75BF44/ffffff?text=Team+Member";
+                          target.src = "./placeholder.png";
                         }}
                       />
                     </div>
