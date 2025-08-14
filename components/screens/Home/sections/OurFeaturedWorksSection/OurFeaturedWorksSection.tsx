@@ -35,7 +35,7 @@ export const OurFeaturedWorksSection = (): JSX.Element => {
       category: "Residential Interior",
       title: "Luxury Home Interior",
       description: "Contemporary kitchen design with smart functionality, premium materials, and elegant aesthetics for modern living.",
-      image: "/Qirat.avif",
+      image: "https://cms.interiorvillabd.com/api/media/file/09.webp?v=1754978011558",
       color: "#50852d", // Deepest green 
       accent: "#50852d"
     },
@@ -44,7 +44,7 @@ export const OurFeaturedWorksSection = (): JSX.Element => {
       category: "Residential Interior",
       title: "Luxury Kitchen Interior",
       description: "Contemporary kitchen design with smart functionality, premium materials, and elegant aesthetics for modern living.",
-      image: "/Raqamyah.avif",
+      image: "https://cms.interiorvillabd.com/api/media/file/02.jpg?v=1754977878708",
       color: "#599432", // Medium-deep green
       accent: "#599432"
     },
@@ -53,7 +53,7 @@ export const OurFeaturedWorksSection = (): JSX.Element => {
       category: "Commercial Interior",
       title: "Luxury Office Interior",
       description: "Contemporary kitchen design with smart functionality, premium materials, and elegant aesthetics for modern living.",
-      image: "/Hoopoe Advisors.avif",
+      image: "https://cms.interiorvillabd.com/api/media/file/04.jpg?v=1754977917235",
       color: "#62a337", // Medium-light green
       accent: "#62a337"
     },
@@ -62,7 +62,7 @@ export const OurFeaturedWorksSection = (): JSX.Element => {
       category: "Residential Interior",
       title: "Luxury Kitchen Interior",
       description: "Contemporary kitchen design with smart functionality, premium materials, and elegant aesthetics for modern living.",
-      image: "/Tamara.avif",
+      image: "https://cms.interiorvillabd.com/api/media/file/05.jpg?v=1754977936514",
       color: "#6db53e", // Lightest green
       accent: "#6db53e"
     }
