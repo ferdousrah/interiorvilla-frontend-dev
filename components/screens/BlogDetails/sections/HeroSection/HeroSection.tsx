@@ -39,9 +39,9 @@ export const HeroSection = (): JSX.Element => {
       icon: Briefcase,
       href: "#",
       subItems: [
-        "Residential Interior",
-        "Commercial Interior",
-        "Architectural Consultancy"
+        { name: "Residential Interior", href: "/residential-interior" },
+        { name: "Commercial Interior", href: "/commercial-interior" },
+        { name: "Architectural Consultancy", href: "/architectural-consultancy" }
       ]
     },
     { 
